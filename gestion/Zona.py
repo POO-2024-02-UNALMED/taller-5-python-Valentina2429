@@ -1,11 +1,11 @@
-from zooAnimales.animal import Animal
+
 
 class Zona:
     def __init__(self, nombre=None, zoo=None):
         self.nombre = nombre
         self.zoo = zoo
         self.animales = []
-        
+
 
     def set_nombre(self, nombre):
         self.nombre = nombre

@@ -1,4 +1,4 @@
-from gestion.zona import Zona
+
 
 class Animal:
     total_animales = 0
@@ -10,7 +10,7 @@ class Animal:
         self.genero = genero
         self.zona = None
         Animal.total_animales += 1
-        
+
 
     @classmethod
     def set_total_animales(cls, total):
@@ -64,7 +64,7 @@ class Animal:
         )
 
     def __str__(self):
-        if self.zona:
+        if get_zona() != None:
             return (
                 f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en "
                 f"{self.habitat} y mi genero es {self.genero}, la zona en la que me ubico "
