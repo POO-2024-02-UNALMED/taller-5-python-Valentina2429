@@ -63,12 +63,13 @@ class Animal:
         )
 
     def toString(self):
-        if getZona() != None:
+        if self.zona != None:
             return (
                 f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en "
                 f"{self.habitat} y mi genero es {self.genero}, la zona en la que me ubico "
                 f"es {self.zona.get_nombre()}, en el {self.zona.get_zoo().get_nombre()}"
             )
+        
         else:
             return (
                 f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en "
