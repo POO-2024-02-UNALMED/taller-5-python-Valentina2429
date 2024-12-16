@@ -62,7 +62,7 @@ class Animal:
             f"Anfibios: {len(Anfibio.listado)}"
         )
 
-    def __str__(self):
+    def toString(self):
         if getZona() != None:
             return (
                 f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en "
