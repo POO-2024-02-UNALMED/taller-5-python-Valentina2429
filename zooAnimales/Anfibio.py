@@ -47,3 +47,4 @@ class Anfibio(Animal):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         Anfibio.salamandras += 1
         return salamandra
+

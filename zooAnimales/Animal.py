@@ -10,6 +10,7 @@ class Animal:
         self.genero = genero
         self.zona = None
         Animal.total_animales += 1
+        
 
     @classmethod
     def set_total_animales(cls, total):

@@ -3,6 +3,7 @@ class Mamifero(Animal):
     caballos = 0
     leones = 0
 
+
     def __init__(self, nombre=None, edad=0, habitat=None, genero=None, pelaje=False, patas=0):
         self.nombre = nombre
         self.edad = edad

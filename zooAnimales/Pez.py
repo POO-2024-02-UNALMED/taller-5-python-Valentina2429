@@ -2,6 +2,7 @@ class Pez(Animal):
     listado = []
     salmones = 0
     bacalaos = 0
+    
 
     def __init__(self, nombre=None, edad=0, habitat=None, genero=None, color_escamas=None, cantidad_aletas=0):
         self.nombre = nombre

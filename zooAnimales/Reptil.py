@@ -8,6 +8,7 @@ class Reptil(Animal):
         self.color_escamas = color_escamas
         self.largo_cola = largo_cola
         Reptil.listado.append(self)
+        
 
     @classmethod
     def set_listado(cls, listado):
