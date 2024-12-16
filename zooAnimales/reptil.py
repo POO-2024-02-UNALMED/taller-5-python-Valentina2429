@@ -1,3 +1,5 @@
+from zooAnimales.animal import Animal
+
 class Reptil(Animal):
     listado = []
     iguanas = 0
@@ -8,7 +10,7 @@ class Reptil(Animal):
         self.color_escamas = color_escamas
         self.largo_cola = largo_cola
         Reptil.listado.append(self)
-        
+
 
     @classmethod
     def set_listado(cls, listado):
