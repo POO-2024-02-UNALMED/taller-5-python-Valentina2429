@@ -17,10 +17,10 @@ class Zoologico:
     def getUbicacion(self):
         return self.ubicacion
 
-    def setZonas(self, zonas):
+    def setZona(self, zonas):
         self.zonas = zonas
 
-    def getZonas(self):
+    def getZona(self):
         return self.zonas
 
     def agregarZonas(self, zona):
