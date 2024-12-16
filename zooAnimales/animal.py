@@ -13,48 +13,48 @@ class Animal:
 
 
     @classmethod
-    def set_total_animales(cls, total):
+    def setTotalAnimales(cls, total):
         cls.total_animales = total
 
     @classmethod
-    def get_total_animales(cls):
+    def getTotalAnimales(cls):
         return cls.total_animales
 
-    def set_nombre(self, nombre):
+    def setNombre(self, nombre):
         self.nombre = nombre
 
-    def get_nombre(self):
+    def getNombre(self):
         return self.nombre
 
-    def set_edad(self, edad):
+    def setEdad(self, edad):
         self.edad = edad
 
-    def get_edad(self):
+    def getEdad(self):
         return self.edad
 
-    def set_habitat(self, habitat):
+    def setHabitat(self, habitat):
         self.habitat = habitat
 
-    def get_habitat(self):
+    def getHabitat(self):
         return self.habitat
 
-    def set_genero(self, genero):
+    def setGenero(self, genero):
         self.genero = genero
 
-    def get_genero(self):
+    def getGenero(self):
         return self.genero
 
-    def set_zona(self, zona):
+    def setZona(self, zona):
         self.zona = zona
 
-    def get_zona(self):
+    def getZona(self):
         return self.zona
 
     def movimiento(self):
         return "desplazarse"
 
     @staticmethod
-    def total_por_tipo():
+    def totalPorTipo():
         return (
             f"Mamiferos: {len(Mamifero.listado)}\n"
             f"Aves: {len(Ave.listado)}\n"
@@ -64,7 +64,7 @@ class Animal:
         )
 
     def __str__(self):
-        if get_zona() != None:
+        if getZona() != None:
             return (
                 f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en "
                 f"{self.habitat} y mi genero es {self.genero}, la zona en la que me ubico "

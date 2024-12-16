@@ -16,27 +16,27 @@ class Pez(Animal):
         Pez.listado.append(self)
 
     @classmethod
-    def set_listado(cls, listado):
+    def setListado(cls, listado):
         cls.listado = listado
 
     @classmethod
-    def get_listado(cls):
+    def getListado(cls):
         return cls.listado
 
-    def set_color_escamas(self, color_escamas):
+    def setColorEscamas(self, color_escamas):
         self.color_escamas = color_escamas
 
-    def get_color_escamas(self):
+    def getColorEscamas(self):
         return self.color_escamas
 
-    def set_cantidad_aletas(self, cantidad_aletas):
+    def setCantidadAletas(self, cantidad_aletas):
         self.cantidad_aletas = cantidad_aletas
 
-    def get_cantidad_aletas(self):
+    def getCantidadAletas(self):
         return self.cantidad_aletas
 
     @classmethod
-    def cantidad_peces(cls):
+    def cantidadPeces(cls):
         return len(cls.listado)
 
     @staticmethod
@@ -44,13 +44,13 @@ class Pez(Animal):
         return "nadar"
 
     @classmethod
-    def crear_salmon(cls, nombre, edad, genero):
+    def crearSalmon(cls, nombre, edad, genero):
         salmon = cls(nombre, edad, "oceano", genero, "rojo", 6)
         cls.salmones += 1
         return salmon
 
     @classmethod
-    def crear_bacalao(cls, nombre, edad, genero):
+    def crearBacalao(cls, nombre, edad, genero):
         bacalao = cls(nombre, edad, "oceano", genero, "gris", 6)
         cls.bacalaos += 1
         return bacalao
