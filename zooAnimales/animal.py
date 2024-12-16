@@ -59,13 +59,13 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
-        
+
         return (
-            f"Mamiferos: {len(Mamifero.listado)}\n"
-            f"Aves: {len(Ave.listado)}\n"
-            f"Reptiles: {len(Reptil.listado)}\n"
-            f"Peces: {len(Pez.listado)}\n"
-            f"Anfibios: {len(Anfibio.listado)}"
+            f"Mamiferos : {len(Mamifero.listado)}\n"
+            f"Aves : {len(Ave.listado)}\n"
+            f"Reptiles : {len(Reptil.listado)}\n"
+            f"Peces : {len(Pez.listado)}\n"
+            f"Anfibios : {len(Anfibio.listado)}"
         )
 
     def toString(self):
